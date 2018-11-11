@@ -1,0 +1,4 @@
+testCase = int(input())
+
+
+                           # UNCOMPLETE
