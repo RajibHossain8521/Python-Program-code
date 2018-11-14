@@ -24,7 +24,27 @@ if __name__ == "__main__":
     print(result)
 """
 
-if __name__ == "__main__":
+if __name__ == '__main__':
+    testCase = int(input())
+    for i in range(testCase):
+        lst = map(int, input().split())
+        lsts = list(lst)
+        find = int(input())
+
+        position = binary_search(lsts, find)
+
+        if position == -1:
+            if find in lsts:
+                print(find, 'is in L, but function returned -1')
+            else:
+                print(find, 'not in list')
+        else:
+            if position in lsts:
+                print(find, 'found in list.')
+
+    print('program terminated')
+
+'''if __name__ == "__main__":
     L = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
     for x in range(1, 11):
@@ -42,7 +62,7 @@ if __name__ == "__main__":
                 print('binary search returned', position, 'for', x, 'which is incorrect')
 
     print('program terminated')
-
+'''
 
 # Binary Search using Recursive Function
 
