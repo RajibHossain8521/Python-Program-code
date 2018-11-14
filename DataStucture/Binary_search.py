@@ -40,7 +40,7 @@ if __name__ == '__main__':
                 print(find, 'not in list')
         else:
             if position in lsts:
-                print(find, 'found in list.')
+                print(find, 'found in list!.')
 
     print('program terminated')
 
