@@ -19,7 +19,17 @@ def quick_sort(L, low, high):
 
 
 if __name__ == '__main__':
+    testCase = int(input())
+    for i in range(testCase):
+        num = map(int, input().split())
+        lst = list(num)
+        quick_sort(lst, 0, len(lst)-1)
+        print(lst)
+
+
+"""
+if __name__ == '__main__':
     L = [2, 6, 4, 3, 7, 5, 1, 20, 12, 13]
     quick_sort(L, 0, len(L) - 1)
     print(L)
-
+"""
