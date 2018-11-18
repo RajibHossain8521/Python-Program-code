@@ -1,7 +1,21 @@
-"""
-    need to doing the mathematical calculation
-    to find the solution that how to find the
-    total last zero of the huge int number
+def rec_factorial(n):
+    if n == 1:
+        return n
+    else:
+        return n*rec_factorial(n-1)
 
-    then, finally write down the code here
-"""
+
+testCase = int(input())
+for i in range(testCase):
+    num = int(input())
+    result = rec_factorial(num)
+    count = 0
+    while result > 0:
+        zero = result % 10
+        if zero == 0:
+            count += 1
+        result = result // 10
+
+    print(count)
+
+
