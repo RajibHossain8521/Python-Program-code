@@ -10,3 +10,6 @@ for i in range(testCase):
     sqr = temp**2
     res = sqr % c
     print('Result =', res)
+
+
+
